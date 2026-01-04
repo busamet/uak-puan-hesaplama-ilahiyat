@@ -634,22 +634,13 @@
             background: #9b2c2c;
         }
 
-        .btn-print {
+        .btn-pdf {
             background: var(--primary);
             color: white;
         }
 
-        .btn-print:hover {
+        .btn-pdf:hover {
             background: var(--primary-light);
-        }
-
-        .btn-export {
-            background: var(--success);
-            color: white;
-        }
-
-        .btn-export:hover {
-            background: #2f855a;
         }
 
         .footer {
@@ -704,6 +695,8 @@
     </style>
 </head>
 <body>
+    <script data-goatcounter="https://uak-puan-hesaplama.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js"></script>
     <div id="root"></div>
 
     <script type="text/babel">
@@ -1487,11 +1480,8 @@
                             <button className="btn btn-reset" onClick={resetAll}>
                                 🔄 Sıfırla
                             </button>
-                            <button className="btn btn-export" onClick={exportData}>
-                                📥 JSON Kaydet
-                            </button>
-                            <button className="btn btn-print" onClick={() => window.print()}>
-                                🖨️ Yazdır
+                            <button className="btn btn-pdf" onClick={() => window.print()}>
+                                📄 PDF Kaydet
                             </button>
                         </div>
                     </div>
